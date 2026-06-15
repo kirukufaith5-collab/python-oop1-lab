@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 class Book:
-    
-    def _init_(self, title, page_count):
+    # Fixed: Added double underscores here
+    def __init__(self, title, page_count):
         self.title = title
         self.page_count = page_count
 
@@ -24,5 +24,3 @@ class Book:
 book1 = Book("And Then There Were None", 272)
 print(book1.page_count)
 book1.turn_page()
-    
-        
